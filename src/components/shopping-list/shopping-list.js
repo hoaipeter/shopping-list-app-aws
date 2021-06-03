@@ -57,7 +57,7 @@ const ShoppingList = (props) => {
   const openItem = (rowIndex) => {
     const id = itemsRef.current[rowIndex].id;
 
-    props.history.push('/shopping-list/' + id);
+    props.history.push('/' + id);
   };
 
   const deleteItem = (rowIndex) => {
@@ -65,7 +65,7 @@ const ShoppingList = (props) => {
 
     ShoppingListService.remove(id)
       .then((response) => {
-        props.history.push('/shopping-list');
+        props.history.push('/');
 
         let newItems = [...itemsRef.current];
         newItems.splice(rowIndex, 1);

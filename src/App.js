@@ -16,7 +16,7 @@ function App() {
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
-            <Link to={'/shopping-list'} className="nav-link">
+            <Link to={'/'} className="nav-link">
               Shopping List
             </Link>
           </li>
@@ -30,9 +30,9 @@ function App() {
 
       <div className="container mt-3">
         <Switch>
-          <Route exact path={['/', '/shopping-list']} component={ShoppingList} />
+          <Route exact path={['/']} component={ShoppingList} />
           <Route exact path="/add" component={AddShoppingItem} />
-          <Route path="/shopping-list/:id" component={ShoppingItem} />
+          <Route path="/:id" component={ShoppingItem} />
         </Switch>
       </div>
     </div>

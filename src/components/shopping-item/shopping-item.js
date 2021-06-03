@@ -61,7 +61,7 @@ const ShoppingItem = (props) => {
   const deleteItem = () => {
     ShoppingListService.remove(currentItem.id)
       .then((response) => {
-        props.history.push('/shopping-list');
+        props.history.push('/');
       })
       .catch((e) => {
         console.log(e);
