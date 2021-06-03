@@ -1,0 +1,29 @@
+.navbar {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.list .action {
+  cursor: pointer;
+}
+
+.submit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.edit-form {
+  max-width: 300px;
+  margin: auto;
+}
+
+.custom-button {
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
